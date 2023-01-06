@@ -1,0 +1,134 @@
+@font-face {
+    font-family:sofachrome_it;
+    src: url(./fonts/sofachrome_it.ttf);    
+}
+
+nav{
+    border-bottom: 3px solid #0a1e29;
+    margin-bottom: 0;
+}
+
+.navbar-header .navbar-brand {
+    height: 100px;
+  }
+.navbar-brand{
+    font-family: sofachrome_it;
+    margin-left: 4rem;
+}
+
+
+.nav-item{
+    margin-top: auto;
+    margin-left: 3rem;
+    font-size: 25px;
+}
+
+
+
+
+body{
+    background-image: url(/images/bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Subrayado Hover del NavBar */
+.navbar .navbar-nav .nav-item{
+    position: relative;
+}
+.navbar .navbar-nav .nav-item::after{
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+    content: '';
+    background-color: #0a1e29;
+    width: 0%;
+    height: 3px;
+}
+.navbar .navbar-nav .nav-item:hover::after{
+    width: 100%;
+    
+}
+/* --- */
+
+
+
+.carousel-caption>h5{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    
+}
+
+.carousel-caption>p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+
+.carousel-caption{
+    background-color: #0a1e29;
+    opacity: .8;
+    background-position: center;
+}
+
+
+
+.mainContainer{
+    background-color: #073147b7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+
+/* .mapa{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: antiquewhite;
+    } */
+
+section>h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold' ;
+    text-align: center;
+}
+
+
+.mapa>p{
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.mapa>h2{
+    margin-bottom: 20px;
+}
+.mapa>svg{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.quienesSomos{
+    display: flex;
+    flex-direction: column;
+}
+
+.quienesSomos>p{
+    font-weight: bold;
+    font-size: 30px;
+}
